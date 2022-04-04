@@ -1,0 +1,222 @@
+/*adds to whole document*/
+body { 
+	/*wallpaper preferences, color(if wallpaper doesn't show), background-image, do not repeat image and keep fixed to viewport, 
+	size will scale relative to viewport*/
+	background-color: white;
+	background-image: url(../pics/background.png); /*background picture made by me*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% auto;
+	color: #641e16;
+}
+/*Container that has all the content in it*/
+.container {
+	/*width compared to whole html page, margins are set to auto to center the container in the remaining space, padding adds space inside the element,
+	background is transparent and color is white, fontfamily is set to sans-serif for helvetica in Macs and Arial in PC by default, font size was a bit small
+	so added some size to it, 20% over normal, borders to container are only 1pixel wide solid line with hexacolor.*/
+	width: 70%;
+	margin: auto; 
+	padding: 1em;
+	background: rgb(254, 254, 254); /*for Edge and IE, where opasity does not work as supposed*/
+	background: rgba(254, 254, 254, 0.8); 
+	font-family: sans-serif;
+	font-size: 120%;
+	border: 1px solid #641e16;
+}
+/*this is the right-side navigation block.
+It is a list of urls basically, listed with the unorganized list element.
+List is without bullets, it has left and bottom margins, a little padding to make it look more 3D, width of 20% of the container it is in,
+it has a background image that is a little see-through and doesn't repeat, borders 1pixel wide solid lines with hexacolor, scaling does not add scroll,
+it is floated to the right side of the container, text in it is centered.*/
+.sidenav ul {
+	list-style-type: none;
+	margin: 0px 0px 60px 30px;
+	padding: 5px;
+	width: 20%;
+	background-image: url(../pics/navi.png);
+	background-repeat: no-repeat;
+	border: 1px solid #555;
+	overflow-x: hidden;
+	float: right;
+}
+.sidenav li {
+	text-align: center;
+}
+/*every link that is in list is displayed as block with padding on all sides. Active links in list have background color and text is white.*/
+li a {
+	display: block; /*links as block elements, whole link area clickable*/
+	padding: 8px 16px;
+}
+li a.active {
+	background: rgb(236, 112, 99);
+	color: white;
+}
+/*banner shows in all pages and is scalable*/
+.banner {
+	width: 100%;
+}
+/*code adds to every link if it has no other orders. Links have no underlining and they are colored. visited links are different color, mouse over link
+makes background different colored and changes font style and color.*/
+a {
+	text-decoration: none;
+	color: black;
+}
+a:visited {
+    	color: #ec7063;
+}
+a:hover {
+    background-color: #ec7063;
+    color: white;
+	font-weight: bold;
+}
+/*mainly divs that have text in them, width is 80% of the container.*/
+.paragraph {
+	width: 80%;
+}
+/*picture in the ID page, floated to the left side has height of 300pixels and has right margin so that the text wont stick to it.*/
+.face {
+	float: left;
+	height: 300px;
+	margin: 0px 30px 20px 0px;
+}
+/*this leg is the footer of the page with info in it. it is full wide, relatively spaced always at the bottom of the container, it has colored background,
+text is centered and colored. It's links have different color compared to other links when visited.*/
+.foot {
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	background-color: #ec7063;
+	color: white;
+	text-align: center;
+}
+.foot a:visited {
+	color: white;
+}
+/*sources of my page have different stying than other text. it is italic with reduced font size and width is same as in paragraphs.*/
+.sources {
+	font-style: italic;
+	font-size: 95%;
+	width: 80%;
+}
+/*Changed specifications bullets into images that I made myself.*/
+.bullets ul {
+	list-style-type: none;
+	list-style-image:url('../pics/bullet.png');/*bullets made by Me*/
+}
+.bullets a {
+	display: inline;
+}
+/*photos for site next to text with margins*/
+#leftie {
+	width: 300px;
+	float: left;
+	margin: 10px 20px 10px 0px;
+}
+#robo {
+	width: 300px;
+	float: left;
+	margin: 10px 20px 10px 0px;
+}
+#righto {
+	width: 300px;
+	float: right;
+	margin: 10px 0px 10px 20px;
+}
+/*centered the javascript date*/
+#date {
+	text-align: center;
+}
+/*specs for javascript button.*/
+.button {
+	background-color: #ec7063;
+  	border: none;
+  	color: white;
+  	padding: 10px 15px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+}
+.LI-profile-badge {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+/********************************************************************************/
+/*for small laptops and such*/
+@media (max-width: 1200px) {
+    .container {
+        font-size: 85%;
+		width: 80%;
+    }
+}
+/*for tablets and other devices*/
+@media (max-width: 850px) {
+	body {
+		background-size: cover;
+	}
+	.container {
+		padding: 10px;
+		width: 85%;
+	}
+	.paragraph {
+		width: 95%;
+	}
+	#leftie {
+		width: 200px;
+	}
+	#robo {
+		width: 200px;
+	}
+	#righto {
+		width: 200px;
+	}
+	.face {
+		height: 250px;
+	}
+	.sidenav ul {
+		float: none;
+		width: 222px;
+		margin: 20px 25%;
+	}
+}
+/*midsize for not breaking the page*/
+@media (max-width: 600px) {
+	.container {
+		padding: 5px;
+		width: 95%;
+	}
+	#leftie {
+		float: none;
+	}
+	#robo {
+		float: none;
+	}
+	#righto {
+		float: none;
+	}
+}
+/*for phones and small devices*/
+@media (max-width: 400px) {
+	body {
+		font-size: 70%;
+	}
+	.container {
+		padding: 5px;
+		width: 95%;
+		min-width: 300px;
+	}
+	.sidenav ul {
+		float: none;
+		width: 95%;
+		margin: 1px;
+	}
+	.paragraph {
+		width: 95%;
+	}
+	.LI-profile-badge {
+		display: none;
+	}
+	.face {
+		float: none;
+	}
+}

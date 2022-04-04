@@ -1,0 +1,64 @@
+<!--instruction to the web browser about what version of HTML the page is written in.(HTML5)-->
+<!DOCTYPE html>
+<html lang = "en"><!--declare the language of a Web page or a portion of a Web page. This is meant to assist search engines and browsers.-->
+<head><!--includes a title for the document, scripts, styles, meta information, and more-->
+	<link rel="stylesheet" href="css/style.css"><!--preferred or an alternate stylesheet-->
+	<meta charset="UTF-8"><!-- lets you write text in all kinds of languages-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--tells the browser that the width of the screen should be considered the Full Width of the page-->
+	<meta name="author" content="¨Lompsolonmukka">
+  	<meta name="description" content="Website project">
+  	<meta name="keywords" content="Lompsolonmukka, WPD, JavaScript">
+
+	<title>WebPage Development
+	</title>
+</head>
+<body>
+	<noscript>Please enable JavaScript to view this site</noscript><!--lets those who have js disabled that the site includes js code and may not work right without.-->
+	<div class="container"><!--this has everything seen on the site in itself-->
+		<header>
+			<img class="banner" src="pics/banner.png" alt="web banner"> <!--Banner picture made by Me.-->
+		</header>
+		<p id="date">date and time</p><!--js code for time and date-->
+		<nav class="sidenav"><!--navigation bar-->
+			<ul>
+				<li><a class="active" href="index.html">HOME</a></li><!--these named active are used to make the active page show different color in navibar-->
+				<li><a href="frontend.html">ICT FrontEnd Development</a></li>
+				<li><a href="well.html">Hyvinvointikioski</a></li>
+				<li><a href="ID.html">ID</a></li>
+				<li><a href="specs.html">Technical Specifications</a></li>
+			</ul>
+		</nav>
+		<div id="content"><!--this has text inside it-->
+			<h2>About JavaScript</h2>
+			<div class="paragraph">
+				<p>JS, or JavaScript is a programming language that is lightweight and most well-known scripting language for the web. JavaScript is a prototype-based(inherited behavior usage), multi-paradigm, dynamic scripting language that supports object-oriented, imperative and declarative programming styles. It's basic syntax is similar to Java and C++. It enables interactive webpages by embedding into the HTML and CSS.</p>
+				<p>First JavaScript was created by Brendan Eich at Netscape in 1995. </p>
+			</div>
+			<div class="paragraph">
+				<p>JavaScript is basically a programming language that controls the behavior of different elements on a webpage. Accessibility is a challenge of it's own in software development. JavaScript is a good asset when used wisely, and can make your website more accessible, but can also make a mess and break the page if used carelessly. To use JavaScript as an aid in your projects, there is some things that are good to know about:</p>
+				<p>&rArr;Make it so that your page works well in text-only form, rely mostly on HTML. For example, use unordered lists in your drop-down menus.</p>
+				<p>&rArr;Everything should be possible to do with keyboard. So that you could tab through controls and links in logical order. And if you use pointer events like klicks and hovering, duplicate those events to keyboard.</p>
+				<p>&rArr;Do not set time limits, since it takes more time to navigate with keyboard, and loading times are individual on each browser and user.</p>
+				<p>&rArr;Do not make flashy or long animations, because flashing can cause seizures. Also for longer than couple seconds animations offer a way to cancel them</p>
+				<p>&rArr;Do not update, redirect or refresh automatically, nor use popups and such without warning. Let users decide their actions.</p>
+				<p>&rArr;Always have a packup plan, in case your script doesn't work or if there are users that have JS disabled.</p>
+			</div>
+			<br />
+			<div class="paragraph">
+				<p></p>
+			</div>
+			<div class="sources"><!--different div class for source formatting-->
+				<p>Sources used for the information on this page:</p>
+				<p><a href="https://developer.mozilla.org/bm/docs/Web/JavaScript">MDN web docs moz://a Javascript </a></p>
+				<p><a href="https://www.w3schools.com/js/">W3Schools about JavaScript</a></p>
+			</div>
+		</div>
+		<br />
+		<footer class="foot">
+			<p><a href="index.html">To the top</a></p>
+			<p>© Copyright By Lompsolonmukka / Made In December 2018 </p>
+		</footer>
+	</div>
+	<script src="js/date.js"></script><!--scripts for js go to the end of the page-->
+</body>
+</html>
